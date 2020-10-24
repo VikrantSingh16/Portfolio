@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/jpg" href="/favicon2.png"/>
+</head>
+<body>
+    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+        <div class="w3-content" style="max-width:600px">
+          <h4 class="w3-center"><b>Hire Me</b></h4>
+      
+          <script type="text/javascript">var submitted=false;</script>
+          
+          <!--Update the URL for thank you page on form submit -->
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+          onload="if(submitted) {window.location='./Thankyou.html';}"></iframe> 
+          
+          <!-- Update the Google forms URL in action-->
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejiaeys782YwKGJ8Mn4eUWaupqhJfacIigdCcBi-AWtOlvNw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+      
+            
+            <div class="w3-section">
+              <label>Full Name</label>
+              <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1284952799">
+            </div>
+            <div class="w3-section">
+              <label>Enter your Email</label>
+              <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.1701932760">
+            </div>
+            <div class="w3-section">
+                <label>Enter your Email Again</label>
+                <input class="w3-input w3-border" type="text" placeholder="Email" id="Cemail" required name="entry.26930643">
+              </div>
+            <div class="w3-section">
+              <label>How can I help you?</label>
+            <textarea cols="30" rows="10" class="w3-input w3-border" type="text" placeholder="What you want me to do? You can also add phone number here for quick response (optional)" id="phone" required name="entry.545276379"></textarea>
+            
+            </div>
+          
+            <div class="w3-section">
+              <button class="w3-button w3-block w3-black w3-margin-bottom button" type="submit">SUBMIT</button>
+            </div>
+          </form>
+      </div>
+      </div>
+      <script type="text/javascript">
+       
+        
+       function validateName() {
+                var name = document.getElementById('name').value;
+                if(name.length == 0) {
+                  alert("Name can't be blank") ;
+                  return false;
+    
+                }
+               
+                return true;
+              }
+    
+              function validatePhone() {
+                var phone = document.getElementById('phone').value;
+                if(phone.length == 0) {
+                  alert("Information can't be blank") ;//Validation Message
+                  return false;
+                }
+              return true;
+    
+             }
+    
+             function validateEmail () {
+                
+                var email = document.getElementById('email').value;
+                
+              if(email.length == 0) {
+                alert("Email can't be blank") ;//Validation Message
+                return false;
+    
+              }
+    
+              if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                alert("Please enter a correct email address") ;//Validation Message
+                return false;
+    
+              }
+    
+           
+    return true;
+             }
+          
+           function validateCEmail(){
+            var Cemail=document.getElementById('Cemail').value;
+            
+             if(Cemail.length == 0) {
+                alert("Email can't be blank") ;//Validation Message
+                return false;
+    
+              }
+    
+              if(!Cemail.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                alert("Please enter a correct email address") ;//Validation Message
+                return false;
+    
+              }
+             
+            
+return true;
+            }
+            function confirmEmail() {
+        var email = document.getElementById("email").value
+        var Cemail = document.getElementById("Cemail").value
+        if(email != Cemail) {
+            alert('Email does not match');
+            return false;
+        }
+    return true;
+    }
+        
+    
+       
+            function validateForm() {
+              if (!validateName() || !validatePhone() || !validateEmail()  || !validateCEmail()||!confirmEmail()) {
+    
+               //Validation Message
+                return false;
+              }
+              else {
+                submitted=true;
+                return true;
+              }
+            }
+            </script>
+</body>
+</html>

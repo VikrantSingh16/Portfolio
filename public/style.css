@@ -1,0 +1,263 @@
+
+   
+hr.style2 {
+    border-top: 3px double #8c8b8b;
+    margin-left: 7%;
+    margin-right: 7%;
+  
+    
+}
+.fab{
+    color:hsl(350, 73%, 65%) ;
+   
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.navigation{
+    background-image: linear-gradient(to right top, #030a0d, #0a1418, #0f1a22, #13212c, #192736, #1a2d3f, #1a3347, #193a50, #084356, #004c59, #005459, #005c56);
+
+}
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(to right top, #030a0d, #0a1418, #0f1a22, #13212c, #192736, #1a2d3f, #1a3347, #193a50, #084356, #004c59, #005459, #005c56);
+    /* background-image: linear-gradient(to right top, #051937, #00446d, #00738c, #00a387, #45ce63); */
+    color: white;
+}
+.name-box{
+    margin-top: 7%;
+}
+.pic{
+   width: 70%;
+    border-radius: 40px;
+    margin-left: 8%;
+}
+/* #title{
+    
+} */
+.container-fluid{
+    padding: 3% 10%;
+}
+h1{
+    font-family: "Montserrat-Black";
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.container-fluid{
+    padding: 3% 15%;
+}
+span{
+    color:hsl(350, 73%, 65%) ;
+    height: 100vh;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {color:hsl(350, 73%, 65%)   ;}
+    to {color: #e7936e;}
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.navbar{
+    padding-bottom: 1.0rem;
+}
+.nav-item{
+    padding: 5px 25px;
+    
+}
+.nav-link{
+    font-size:1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Download Buttons */
+.download-button{
+    margin:5% 3% 5% 0;
+}
+/*Images*/
+.skills{
+    width: 80%;
+    
+    border-radius: 20px;
+    margin: 20px;
+    height: 150px;
+}
+/*.skill-html{
+    width: 70%;
+    border-radius: 20px;
+    
+    
+}*/
+/*SKILLS*/
+
+#Skills{
+    padding: 7% 13%;
+    margin: 0;
+    
+    
+}
+.skills-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.feature-head{
+    text-align: center;
+    margin: 0;
+   font-weight: 400;
+}
+.feature-box{
+  margin-top: 80px;
+    text-align: center;
+    padding: 6%;
+   
+    margin-bottom: 50px;
+    
+    
+}
+.title h2{
+    font-weight: bolder;
+    color: white;
+    line-height: .5rem;
+}
+/*About*/
+#about{
+    padding: 5% 5%;
+   
+}
+.about-box{
+    text-align: center;
+    padding: 5%;
+}
+h3{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color:#8f8f8f;
+    font-weight: bold;
+}
+/* .about-box {
+   
+  transition:  transform 2s;
+}
+.about-box:hover{
+   
+  transform: rotateY(360deg);
+} */
+.youtube-icon{
+   color: #FF0000;
+   margin: 1rem;
+   transition:  transform 2s;
+}
+.youtube-icon:hover{
+    color: hsla(0, 100%, 50%, 0.767);
+    transform: rotateY(360deg);
+}
+.bike-icon{
+    color:#3333FF;
+    margin: 1rem;
+    transition:  transform 2s;
+}
+.bike-icon:hover{
+    color:hsl(221, 100%, 60%);
+    transform: rotateY(360deg);
+   
+}
+.game-icon{
+  color:  palevioletred;
+  margin: 1rem;
+  transition:  transform 2s;
+}
+.game-icon:hover{
+  color:#ff85f5;
+  transform: rotateY(360deg);
+}
+.dumbell-icon{
+    margin: 1rem;
+    transition:  transform 2s;
+}
+.dumbell-icon:hover{
+    color:hsla(0, 0%, 0%, 0.452);
+    transform: rotateY(360deg);
+}
+/* Testimonial Section */
+
+
+  /*Social Link*/
+
+ #contact{
+    padding: 7% 15%;
+    margin: 0;
+ 
+ 
+  
+ }
+ .social{
+     margin-left: 70%;
+ }
+ .hireme body {
+    background-image: linear-gradient(to right bottom, #156464, #006579, #00638c, #385d96, #685292, #704988, #773f7d, #7c3570, #672f6b, #522a64, #3c245d, #261f54) !important;
+ }
+ .flip-card {
+    background-color: transparent;
+    /* width: 300px; */
+    height: 120px;
+  
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+ 
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  .flip-text{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.0rem;
+      
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    height: 150px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  /* .flip-card-front {
+    /* background-color: #bbb;
+    color: black; }*/
+   
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:black;
+    color: color;
+    transform: rotateY(180deg);
+border-radius: 20px;  
+}
